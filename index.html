@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hafiz Mohamed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="container">
+
+        <!-- LEFT -->
+        <div class="left">
+            <h2 class="logo">HAFIZ</h2>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/hafiz-mohamed-c-46509831b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6%2BAO42kPTG%2Bi9Dja49oYhA%3D%3D"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Hafiz-23"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/_hafi_z?igsh=bGQyaGF2eTQ2d3E4"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/YOUR_USERNAME"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com/YOUR_USERNAME"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="menu-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="right">
+            <div class="content">
+                <h3>COMPUTER SCIENCE ENGINEERING STUDENT</h3>
+                <h1>HAFIZ MOHAMED C</h1>
+
+                <p>
+                    Final-year BTech Computer Science student passionate about software development.
+                    I enjoy building real-world applications and solving problems using C, Python,
+                    and web technologies. Currently preparing for software engineering roles.
+                </p>
+
+                <a href="Hafiz_Mohamed_CV.pdf" download class="btn1">Download CV</a>
+                <a href="#contact" class="btn2">Contact</a>
+            </div>
+        </div>
+
+        <img src="profile.jpg" class="profile">
+
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <h1>About Me</h1>
+
+            <p class="about-text">
+                I am <span>Hafiz Mohamed C</span> from Tirur, Malappuram.
+                I recently completed my <span>BTech in Computer Science Engineering</span>
+                from MES College of Engineering, Kuttippuram.
+            </p>
+
+            <p>
+                Before pursuing BTech, I completed my <span>Diploma in Electrical and Electronics Engineering</span>
+                from SSM Polytechnic College, Tirur. My academic journey helped me build strong analytical,
+                problem-solving, and technical skills.
+            </p>
+
+            <p>
+                My main project is an <span>IoT Enabled Water Quality Monitoring System</span>
+                integrated with a mobile application and QR code technology for real-time water analysis.
+            </p>
+
+            <p>
+                I also developed a mini project called <span>FixMyWheel</span>,
+                a vehicle assistance application that helps users find nearby mechanics
+                and access emergency vehicle support services.
+            </p>
+
+            <p>
+                I am passionate about software development and continuously improving my skills in
+                <span>C</span>, <span>Python</span>, <span>Flutter</span>, and
+                <span>Web Development</span>. I enjoy building real-world applications
+                and learning new technologies.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+        <h1>Education</h1>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2023 - 2026</h4>
+                    <h2>BTech Computer Science Engineering</h2>
+                    <p>MES College of Engineering, Kuttippuram</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>2020 - 2023</h4>
+                    <h2>Diploma in Electrical & Electronics</h2>
+                    <p>S.S.M Polytechnic College, Tirur</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+
+        <div class="skills-grid">
+            <div class="skill">C</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Arduino</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h2>Fix My Wheel</h2>
+                <p>Vehicle assistance app with mechanic locator and real-time support.</p>
+            </div>
+
+            <div class="project-card">
+                <h2>Water Quality Monitoring</h2>
+                <p>IoT-based system with QR scanning and mobile app for water analysis.</p>
+            </div>
+
+            <div class="project-card">
+                <h2>Motor Speed Control</h2>
+                <p>Bluetooth-based control system for induction motor speed.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h1>Contact</h1>
+
+        <div class="contact-container">
+
+            <!-- LEFT SIDE (FORM) -->
+            <div class="contact-left">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+
+                <label>Message</label>
+                <textarea id="message" placeholder="Type your message..."></textarea>
+
+                <button id="sendBtn" onclick="sendMail()">
+                    <span id="btnText">Send</span>
+                    <span id="loader" class="loader"></span>
+                </button>
+            </div>
+
+            <!-- RIGHT SIDE (INFO) -->
+            <div class="contact-right">
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hafizmohamedc16@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 9946635205</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Tirur, Kerala, India</p>
+                </div>
+
+                <!-- SOCIAL ICONS -->
+                <div class="contact-socials">                
+                    <a href="https://github.com/Hafiz-23"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hafiz-mohamed-c-46509831b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6%2BAO42kPTG%2Bi9Dja49oYhA%3D%3D"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_hafi_z?igsh=bGQyaGF2eTQ2d3E4"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.add("active");
+            document.getElementById("overlay").classList.add("active");
+        }
+
+        function closeMenu() {
+            document.getElementById("sidebar").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("0M2kGMQiO32SKQuu_");
+        })();
+
+        function showPopup(message) {
+            let popup = document.getElementById("popup");
+            let popupMsg = document.getElementById("popupMessage");
+
+            popupMsg.innerText = message;
+            popup.style.display = "block";
+
+            setTimeout(() => {
+                popup.style.display = "none";
+            }, 3000);
+        }
+
+        function sendMail() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+                showPopup("Please fill all fields ⚠️");
+                return;
+            }
+
+            let btn = document.getElementById("sendBtn");
+            let text = document.getElementById("btnText");
+            let loader = document.getElementById("loader");
+
+            text.innerText = "Sending...";
+            loader.style.display = "inline-block";
+            btn.disabled = true;
+
+            let params = { name, email, message };
+
+            emailjs.send("service_joctxja", "template_7qsh69v", params)
+                .then(() => {
+                    showPopup("Message sent successfully ✅");
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                })
+                .catch(() => {
+                    showPopup("Failed to send message ❌");
+                })
+                .finally(() => {
+                    text.innerText = "Send";
+                    loader.style.display = "none";
+                    btn.disabled = false;
+                });
+        }
+    </script>
+
+    <div id="popup" class="popup">
+        <p id="popupMessage"></p>
+    </div>
+
+</body>
+
+<!--
+PUBLIC_KEY= 0M2kGMQiO32SKQuu_ 
+SERVICE_ID= service_joctxja
+TEMPLATE_ID= template_7qsh69v
+-->
+
+</html>
